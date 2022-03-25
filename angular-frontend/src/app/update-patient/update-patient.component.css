@@ -1,0 +1,33 @@
+
+.cont{
+  
+    margin: auto;
+    width: 500px;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding:15px ;
+    background-color: rgb(202, 245, 225);
+}
+input{
+    width: 300px;
+}
+select{
+    width: 300px;
+    height: 35px;
+    padding-left: 7px;
+}
+h2{
+    text-align: center;
+}
+form{
+    padding-left: 20px;
+}
+
+table tr td{
+    padding: 6px;
+}
+
+.btn-div{
+    margin-top: 20px;
+    text-align: center;
+}

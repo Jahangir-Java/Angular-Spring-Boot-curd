@@ -1,0 +1,59 @@
+
+
+<div class="container cont">
+    <h2>Patient registration form</h2>
+    <div class="row justify-content-between">
+      <div class="col-9"></div>
+      <div class="col-3"><img [src]="url" height="80"></div>
+      
+    </div>
+    <form (ngSubmit)="onSubmit()" action="">
+        <table>
+
+          <tr>
+            <td>Patient Name </td>
+            <td><input type="text" id="email" class="form-control" placeholder="Enter patient name" [(ngModel)]="patient.patient_name" name="patient_name" required></td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td><select name="gender" id="gender" [(ngModel)]="patient.gender" name="gender" required>
+              <option value="" hidden>Select gender</option>
+              <option value="Male" >Male</option>
+              <option value="Female">Female</option>
+              <option value="Others">Others</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td>Age</td>
+            <td><input type="number" id="age" class="form-control" placeholder="Enter patient age" [(ngModel)]="patient.age" name="age" required="true"></td>
+          </tr>
+          <tr>
+            <td>DOB</td>
+            <td><input type="date" id="dob" class="form-control" [(ngModel)]="patient.dob" name="dob" required></td>
+          </tr>
+          <tr>
+            <td>Phone number </td>
+            <td><input type="number" id="phone" class="form-control"  placeholder="Enter phone number" [(ngModel)]="patient.phone" name="phone" required></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input type="email" id="email" class="form-control" placeholder="Enter address" [(ngModel)]="patient.email" name="email" required></td>
+          </tr>
+          <tr>
+            <td>Address </td>
+            <td><input type="text" id="address" class="form-control" placeholder="Enter address" [(ngModel)]="patient.address" name="address" required></td>
+          </tr>
+          <tr>
+            <td>Photo</td>
+            <td><input type="file"  id="photo" class="form-control"  name="photo" [(ngModel)]="patient.photo" (change)="onselectFile($event)"  required></td>
+          </tr>
+         
+        </table>
+        
+        <div class="btn-div">
+            <Button class="btn btn-success" type="submit">Submit</Button>
+        </div>
+   
+    </form>
+    
+  </div>

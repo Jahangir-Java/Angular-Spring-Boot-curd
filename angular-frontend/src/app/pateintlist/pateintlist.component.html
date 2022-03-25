@@ -1,0 +1,33 @@
+<div class="cont">
+    <h2>All patient</h2>
+    <table>
+        <tr>          
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>DOB</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Photo</th>
+            <th>Actions</th>
+        </tr>
+        <tr *ngFor="let patient of patientss">
+            <td>{{patient.patient_name}}</td>
+            <td>{{patient.gender}}</td>
+            <td>{{patient.age}}</td>
+            <td>{{patient.dob}}</td>
+            <td>{{patient.phone}}</td>
+            <td>{{patient.email}}</td>
+            <td>{{patient.address}}</td>
+            <td><img src="{{patient.photo}}" alt="image"></td>
+            <td>
+                <button (click)="updatePatient(patient.patient_id)" class="btn btn-info">Update</button>
+                <button style="margin-left: 10px;" (click)="deletePatient(patient.patient_id)" class="btn btn-danger">Delete</button>
+                <button style="margin-left: 10px;" (click)="gotoTotopatientDetails(patient.patient_id)" class="btn btn-primary">Details</button>
+            </td>
+        </tr>
+    </table>
+
+
+</div>

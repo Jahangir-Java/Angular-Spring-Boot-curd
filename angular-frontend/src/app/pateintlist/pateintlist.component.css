@@ -1,0 +1,15 @@
+table{
+    border: 1px slid black;
+    border-collapse: collapse;
+    width: 1200px;
+}
+
+th,td{
+    border: 1px solid black;
+}
+
+.cont{
+    text-align: center;
+    width: 1200px;
+    margin: auto;
+}

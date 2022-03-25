@@ -1,0 +1,19 @@
+table{
+    border: 1px slid black;
+    border-collapse: collapse;
+    width: 500px;
+    margin-left: 100px;
+}
+.color{
+    width: 10px;
+}
+
+
+.cont{
+   
+    width: 600px;
+    margin: auto;
+    background-color: rgb(156, 195, 211);
+    padding: 20px;
+    margin-top: 100px;
+}
